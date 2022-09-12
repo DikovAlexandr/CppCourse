@@ -1,0 +1,9 @@
+# ninja log v5
+14	511	6841590208618478	CMakeFiles/homewokr.dir/alternative.c.obj	7f5d744066b57744
+20	499	6841655771104031	CMakeFiles/homewokr.dir/main.cpp.obj	8ae12240e17d3b3d
+499	731	6841655773354486	homewokr.exe	57a6b1cfbd13b7d2
+4	471	6841609971399892	CMakeFiles/homewokr.dir/Task2.cpp.obj	97ad005c405e354f
+14	559	6841640237562245	CMakeFiles/homewokr.dir/Task3.cpp.obj	279480713a008ae
+4	489	6841655771003971	CMakeFiles/homewokr.dir/Tack4.cpp.obj	5a700c0940291d04
+2	368	6846680783747156	build.ninja	54ad9308e87de1f4
+12	430	6841655770413957	CMakeFiles/homewokr.dir/Task1.c.obj	2b35c447ae561a
