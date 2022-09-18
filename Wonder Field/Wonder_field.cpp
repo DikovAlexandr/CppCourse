@@ -28,11 +28,11 @@ int main(){
             }
         }
         if (f) {
-            cout << "You're goddamn right" << endl;
+            cout << "You're right" << endl;
             cout << mask << endl;
         }
         else {
-            cout << "You're f****g wrong" << endl;
+            cout << "You're wrong" << endl;
             cout << mask << endl;
         }
     }
