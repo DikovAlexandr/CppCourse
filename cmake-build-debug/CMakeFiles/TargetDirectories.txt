@@ -1,3 +1,0 @@
-C:/Users/dsash/CLionProjects/homewokr/cmake-build-debug/CMakeFiles/homewokr.dir
-C:/Users/dsash/CLionProjects/homewokr/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dsash/CLionProjects/homewokr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
