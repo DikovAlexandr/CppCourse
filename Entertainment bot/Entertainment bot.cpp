@@ -126,8 +126,9 @@ int main() {
     music[8] = "Katy Perry - I Kissed A Girl";
     music[9] = "Lana Del Rey - High By The Beach";
     // Итоговый вывод рекоммендаций
-    cout << "Super! Your movie for today is " << movie[getmovie(human.name)-65] << ", star"
-                                                                                " " << vip[getvip(human.surname)-65] << ". Musical composition for "
-                                                                                                                     "you: " << music[getmusic(human.day, human.month, human.year)] << endl;
+    if (human.day<=31 && human.month<=12) cout << "Super! Your movie for today is " << movie[getmovie(human.name)-65] << ", star"
+                                                                                   " " << vip[getvip(human.surname)-65] << ". Musical composition for "
+                                                                                                                           "you: " << music[getmusic(human.day, human.month, human.year)] << endl;
+    else cout << "You entered the wrong date of birth" << endl;
     return 0;
 }
