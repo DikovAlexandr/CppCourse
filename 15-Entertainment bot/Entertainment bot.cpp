@@ -5,11 +5,11 @@
 // Программа рекомменндующая фильм, звезду и песню при регистрации
 using namespace std;
 // Функция получения номера фильма
-int getmovie(string s) {
+int getMovie(string s) {
     return int(s[0]);
 }
 // Функция получения номера звезды
-int getvip(string s) {
+int getVip(string s) {
     return int(s[0]);
 }
 // Функция нахождения суммы цифр числа
@@ -22,7 +22,7 @@ int sum(int x) {
     return y;
 }
 // Фунция получения номера песни
-int getmusic(int a, int b, int c) {
+int getMusic(int a, int b, int c) {
     int num = sum(a) + sum(b) + sum(c);
     if (sum(num) >= 10) return sum(sum(num));
     else return sum(num);
@@ -126,9 +126,9 @@ int main() {
     music[8] = "Katy Perry - I Kissed A Girl";
     music[9] = "Lana Del Rey - High By The Beach";
     // Итоговый вывод рекоммендаций
-    if (human.day<=31 && human.month<=12) cout << "Super! Your movie for today is " << movie[getmovie(human.name)-65] << ", star"
-                                                                                   " " << vip[getvip(human.surname)-65] << ". Musical composition for "
-                                                                                                                           "you: " << music[getmusic(human.day, human.month, human.year)] << endl;
+    if (human.day<=31 && human.month<=12) cout << "Super! Your movie for today is " << movie[getMovie(human.name)-65] << ", star"
+                                                                                   " " << vip[getVip(human.surname)-65] << ". Musical composition for "
+                                                                                                                           "you: " << music[getMusic(human.day, human.month, human.year)] << endl;
     else cout << "You entered the wrong date of birth" << endl;
     return 0;
 }

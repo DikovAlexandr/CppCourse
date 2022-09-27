@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Fibbonachi(int x) {
+void fibbonachi(int x) {
     unsigned  long  a = 1, b = 1;
     vector<unsigned long> fibb(x + 1);
     fibb[0] = 1;
@@ -17,7 +17,7 @@ void Fibbonachi(int x) {
     }
 }
 
-int GetInt() {
+int getInt() {
     int a = 0;
     cout << "Enter a integer value: ";
     string s;
@@ -36,9 +36,9 @@ int GetInt() {
 }
 
 int main() {
-    int x = GetInt();
+    int x = getInt();
     if ((x != -1) && (1 <= x) && (x <= 100))
-    Fibbonachi(x);
+    fibbonachi(x);
     else cout << "Your enter is incorrect" << endl;
     return 0;
 }

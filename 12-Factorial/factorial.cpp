@@ -3,7 +3,7 @@
 
 using namespace std;
 
-unsigned long Fact(int a){
+unsigned long fact(int a){
     unsigned long b=1, c=1;
     for (int i = 1; i <= a; ++i) {
         b=b*c;
@@ -13,7 +13,7 @@ unsigned long Fact(int a){
     return b;
 }
 
-int GetInt() {
+int getInt() {
     int a = 0;
     cout << "Enter a integer value(it must be less than 13): ";
     string s;
@@ -32,8 +32,8 @@ int GetInt() {
 }
 
 int main() {
-    int x = GetInt();
-    if (x!=-1) cout << Fact(x) << endl;
+    int x = getInt();
+    if (x!=-1) cout << fact(x) << endl;
     else cout << "Your enter is incorrect" << endl;
     return 0;
 }

@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int task3() {
+int main() {
     int n;
     cout << "Think of a number N from 1 to 100, and I'll guess!" <<endl;
     int l = 1;

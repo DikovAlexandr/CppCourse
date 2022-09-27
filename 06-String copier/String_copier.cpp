@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int task2() {
+int main() {
     string input, output;
     cin >> input;
     for (int i=0; i<=input.size(); i++)

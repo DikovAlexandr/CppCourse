@@ -15,11 +15,11 @@ void move(int a, int b) {
  * и все оставшиеся диски передвигаем в 3
  *
 */
-void recmove(int n, int a, int b, int c) {
+void recMove(int n, int a, int b, int c) {
     if (n == 0) return;
-    recmove(n - 1, a, c, b);
+    recMove(n - 1, a, c, b);
     move(a, b);
-    recmove(n - 1, c, b, a);
+    recMove(n - 1, c, b, a);
 }
 
 int main() {
@@ -29,5 +29,5 @@ int main() {
     a = 1;
     b = 3;
     c = 2;
-    recmove(n, a, b, c);
+    recMove(n, a, b, c);
 }

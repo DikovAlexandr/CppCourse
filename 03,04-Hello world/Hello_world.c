@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int alternative_task1() {
+int main() {
     printf("Hello, World!\n");
     return 0;
 }
