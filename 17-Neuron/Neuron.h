@@ -13,7 +13,7 @@ private:
     std::vector<double> weights;
     bool activationFunc{};
 
-    double sigmoid(double x);
+    static double sigmoid(double x);
 
 public:
     Neuron(int n, std::vector<double> in, std::vector<double> w, bool f);
@@ -21,7 +21,5 @@ public:
     ~Neuron();
 
     double calculate();
-
-    // vector сам удаляет данные при выходе из зоны видимости функции
 };
 
