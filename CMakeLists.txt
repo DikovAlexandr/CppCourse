@@ -17,10 +17,11 @@ add_executable(Dikov
         #"14-Hanoi/hanoi.cpp"
         #"15-Entertainment bot/entertainment_bot.cpp"
         #"16-Memory control/Three dimensional matrix.cpp"
-        "17-Neuron/main.cpp" "17-Neuron/Neuron.cpp" "17=Neuron/Neuron.h"
+        #"17-Neuron/main.cpp" "17-Neuron/Neuron.cpp" "17=Neuron/Neuron.h"
         #"18-Swap by links/swap.cpp"
         #"19-HeapSort/HeapSort.cpp"
 	#"20-Rectangles/main.cpp" "20-Rectangles/Rectangle.cpp" "20=Rectangles/Rectangle.h"
+	"21-LIFO-FIFO/main.cpp" "21-LIFO-FIFO/CStructure.h" "21-LIFO-FIFO/CStructureWithContainer.h" "21-LIFO-FIFO/CStructureWithContainer.cpp" "21-LIFO-FIFO/FIFO.h" "21-LIFO-FIFO/FIFO.cpp" "21-LIFO-FIFO/LIFO.h" "21-LIFO-FIFO/LIFO.cpp"
 	#"Machine zero, Epsilon and Infinity/Float double properties.cpp"
-	#"Python's slicer/Slicer.cpp"
+	#"Python's slicer/Slicer.cpp"r
         )
