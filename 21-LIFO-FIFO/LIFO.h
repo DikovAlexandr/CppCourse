@@ -1,19 +1,19 @@
-//
-// Created by dsash on 31.10.2022.
-//
 #pragma once
 
 #include "CStructureWithContainer.h"
 #include <vector>
 
-class LIFO : public CStructureWithContainer {
+template<typename T>
+class LIFO : public CStructureWithContainer<T> {
 public:
     // Конструктор
-    explicit LIFO(std::vector<int> a);
+    LIFO();
 
-    void push(int x);
+    // Добавление элмента
+    void push(T x);
 
-    void pop();
+    // Удаление элемента
+    T pop();
 
     // Деструктор
     ~LIFO();

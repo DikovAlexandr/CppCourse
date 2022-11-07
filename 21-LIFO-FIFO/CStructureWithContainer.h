@@ -1,23 +1,26 @@
-//
-// Created by dsash on 31.10.2022.
-//
 #pragma once
 
 #include "CStructure.h"
 #include <vector>
-#include <iostream>
 
-class CStructureWithContainer : virtual public CStructure {
+template<typename T>
+class CStructureWithContainer : virtual public CStructure<T> {
 public:
-    // Поле вектор
-    std::vector<int> a;
-
     // Конструктор
-    explicit CStructureWithContainer(std::vector<int> a);
+    CStructureWithContainer();
+
+    // Set
+    void setVector(std::vector<T> input);
+
+    // Get
+    std::vector<T> getVector();
 
     // Вывод вектора
     void print();
 
     // Деструктор
     ~CStructureWithContainer();
+
+    // Поле вектор
+    std::vector<T> a;
 };

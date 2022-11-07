@@ -1,19 +1,19 @@
-//
-// Created by dsash on 31.10.2022.
-//
 #pragma once
 
 #include "CStructureWithContainer.h"
 #include <vector>
 
-class FIFO : public CStructureWithContainer {
+template<typename T>
+class FIFO : public CStructureWithContainer<T> {
 public:
     // Конструктор
-    explicit FIFO(std::vector<int> a);
+    FIFO();
 
-    void push(int x);
+    // Добавление элмента
+    void push(T x);
 
-    void pop();
+    // Удаление элемента
+    T pop();
 
     // Деструктор
     ~FIFO();

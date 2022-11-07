@@ -1,20 +1,23 @@
-//
-// Created by dsash on 31.10.2022.
-//
-
-#include <utility>
-#include <vector>
-#include <cassert>
 #include "FIFO.h"
 
-FIFO::FIFO(std::vector<int> a) : CStructureWithContainer(std::move(a)) {}
+// Конструктор
+template<typename T>
+FIFO<T>::FIFO() = default;
 
-void FIFO::push(int x) {
-    a.vector::insert(a.vector::begin(), x);
+// Добавление элемента
+template<typename T>
+void FIFO<T>::push(T x) {
+    FIFO<T>::a.push_back(x);
 }
 
-void FIFO::pop() {
-    a.vector::erase(a.vector::begin());
+// Удаление элемента
+template<typename T>
+T FIFO<T>::pop() {
+    T temp = FIFO<T>::a.front();
+    FIFO<T>::a.erase(FIFO<T>::a.begin());
+    return temp;
 }
 
-FIFO::~FIFO() = default;
+// Деструктор
+template<typename T>
+FIFO<T>::~FIFO() = default;

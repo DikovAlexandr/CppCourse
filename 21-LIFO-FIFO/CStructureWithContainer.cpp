@@ -1,21 +1,29 @@
-//
-// Created by dsash on 31.10.2022.
-//
-
-#include <utility>
 #include <vector>
 #include <iostream>
 
 #include "CStructureWithContainer.h"
 
-CStructureWithContainer::CStructureWithContainer(std::vector<int> a) : a(std::move(a)) {}
+template<typename T>
+CStructureWithContainer<T>::CStructureWithContainer() = default;
 
-void CStructureWithContainer::print() {
+template<typename T>
+void CStructureWithContainer<T>::print() {
     for (int i: a) {
-        std::cout << i << " ";
+        std::cout << i << "\t";
     }
     std::cout << std::endl;
 }
 
-CStructureWithContainer::~CStructureWithContainer() = default;
+template<typename T>
+void CStructureWithContainer<T>::setVector(std::vector<T> input) {
+    a = input;
+}
+
+template<typename T>
+std::vector<T> CStructureWithContainer<T>::getVector() {
+    return a;
+}
+
+template<typename T>
+CStructureWithContainer<T>::~CStructureWithContainer() = default;
 

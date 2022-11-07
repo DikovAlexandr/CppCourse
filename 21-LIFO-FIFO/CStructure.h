@@ -3,11 +3,12 @@
 //
 #pragma once
 
+template<typename T>
 class CStructure {
 public:
     // Виртуальная функция push
-    virtual void push(int x = 0) = 0;
+    virtual void push(T x) = 0;
 
     // Виртуальная функция pop
-    virtual void pop() = 0;
+    virtual T pop() = 0;
 };

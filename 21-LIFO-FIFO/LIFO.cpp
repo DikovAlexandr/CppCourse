@@ -1,19 +1,23 @@
-//
-// Created by dsash on 31.10.2022.
-//
-
-#include <utility>
-#include <vector>
 #include "LIFO.h"
 
-LIFO::LIFO(std::vector<int> a) : CStructureWithContainer(std::move(a)) {}
+// Конструктор
+template<typename T>
+LIFO<T>::LIFO() = default;
 
-void LIFO::push(int x) {
-    a.vector::push_back(x);
+// Добавление элемента
+template<typename T>
+void LIFO<T>::push(T x) {
+    LIFO<T>::a.push_back(x);
 }
 
-void LIFO::pop() {
-    a.vector::erase(a.vector::begin());
+// Удаление элемента
+template<typename T>
+T LIFO<T>::pop() {
+    T temp = LIFO<T>::a.back();
+    LIFO<T>::a.pop_back();
+    return temp;
 }
 
-LIFO::~LIFO() = default;
+// Деструктор
+template<typename T>
+LIFO<T>::~LIFO() = default;

@@ -21,7 +21,8 @@ add_executable(Dikov
         #"18-Swap by links/swap.cpp"
         #"19-HeapSort/HeapSort.cpp"
 	#"20-Rectangles/main.cpp" "20-Rectangles/Rectangle.cpp" "20=Rectangles/Rectangle.h"
-	"21-LIFO-FIFO/main.cpp" "21-LIFO-FIFO/CStructure.h" "21-LIFO-FIFO/CStructureWithContainer.h" "21-LIFO-FIFO/CStructureWithContainer.cpp" "21-LIFO-FIFO/FIFO.h" "21-LIFO-FIFO/FIFO.cpp" "21-LIFO-FIFO/LIFO.h" "21-LIFO-FIFO/LIFO.cpp"
+	"21-LIFO-FIFO/main.cpp" "21-LIFO-FIFO/CStructure.h" "21-LIFO-FIFO/CStructureWithContainer.h" "21-LIFO-FIFO/CStructureWithContainer.cpp"
+		"21-LIFO-FIFO/FIFO.h" "21-LIFO-FIFO/FIFO.cpp" "21-LIFO-FIFO/LIFO.h" "21-LIFO-FIFO/LIFO.cpp" "21-LIFO-FIFO/templates.cpp"
 	#"Machine zero, Epsilon and Infinity/Float double properties.cpp"
 	#"Python's slicer/Slicer.cpp"r
         )
