@@ -25,5 +25,6 @@ add_executable(Dikov
 	#"Machine zero, Epsilon and Infinity/Float double properties.cpp"
 	#"Python's slicer/Slicer.cpp"
 	#"22-SudokuKiller/sudoku.cpp
-	"23-Debugger/main.cpp" "23-Debugger/CShowable.hpp" "23-Debugger/CPoint2D.cpp" "23-Debugger/CPoint2D.hpp" "23-Debugger/CSong.cpp" "23-Debugger/CSong.hpp" "23-Debugger/CToy.cpp" "23-Debugger/CToy.hpp"
+	#"23-Debugger/main.cpp" "23-Debugger/CShowable.hpp" "23-Debugger/CPoint2D.cpp" "23-Debugger/CPoint2D.hpp" "23-Debugger/CSong.cpp" "23-Debugger/CSong.hpp" "23-Debugger/CToy.cpp" "23-Debugger/CToy.hpp"
+	"24-Store/main.cpp" "24-Store/StoreLib.hpp" "24-Store/Item.hpp" "24-Store/Item.cpp" "24-Store/Fruit.hpp" "24-Store/Fruit.cpp" "24-Store/Milk.hpp" "24-Store/Milk.cpp" "24-Store/Yogurt.hpp" "24-Store/Yogurt.cpp" "24-Store/Cart.hpp" "24-Store/Cart.cpp"
         )
