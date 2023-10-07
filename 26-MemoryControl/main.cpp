@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <cmath>
 
-void Tack1() {
+void Task1() {
     int target_value = 1073741824;
     unsigned char A[4];
     unsigned int *A_ptr = reinterpret_cast<unsigned int *>(A);
@@ -17,7 +17,7 @@ void Tack1() {
     }
 }
 
-void Tack2() {
+void Task2() {
     double target_value = 9e99;
     unsigned char A[8];
     double* A_ptr = reinterpret_cast<double*>(A);
@@ -33,7 +33,7 @@ void Tack2() {
 }
 
 int main() {
-    Tack1();
-    // Tack2();
+    Task1();
+    Task2();
     return 0;
 }
