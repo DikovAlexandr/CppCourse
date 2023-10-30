@@ -16,7 +16,7 @@ int partitionLomuto(int arr[], int left, int right) {
         // If the current element is less than or equal to the pivot
         if (arr[i] <= pivot_value) {
             pivot_point++;
-            std::swap(arr[i], arr[pivot_point]);
+            swap(arr[i], arr[pivot_point]);
         }
     }
     swap(arr[pivot_point], arr[left]);
@@ -47,36 +47,22 @@ int partitionHoare(int arr[], int left, int right) {
     }
 }
 
-// func Partition_Hoare(A, left, right)
-//  pivot_value = A[(left+right)/2]
-//  i = left
-//  j = right
-//  while (i <= j)
-//      while (A[i] < pivot_value)
-//         ++i;
-//      while (A[j] > pivot_value)
-//         --j;
-//      if (i >= j) break;
-//      swap(A[i], A[j]);
-//      ++i;
-//      --j;
-
 // Main function for quicksort
-void quickSort(int arr[], int low, int right, int partitionScheme) {
-    if (low >= right) return;
+void quickSort(int arr[], int left, int right, int partitionScheme) {
+    if (left >= right) return;
     int pivot;
 
     if (partitionScheme == 0) {
         // Get the index of partition
-        pivot = partitionHoare(arr, low, right);
+        pivot = partitionHoare(arr, left, right);
         // Recursively sort elements before and after the pivot
-        quickSort(arr, low, pivot, partitionScheme);
+        quickSort(arr, left, pivot, partitionScheme);
         quickSort(arr, pivot + 1, right, partitionScheme);
     } else if (partitionScheme == 1) {
         // Get the index of partition
-        pivot = partitionLomuto(arr, low, right);
+        pivot = partitionLomuto(arr, left, right);
         // Recursively sort elements before and after the pivot
-        quickSort(arr, low, pivot - 1, partitionScheme);
+        quickSort(arr, left, pivot - 1, partitionScheme);
         quickSort(arr, pivot + 1, right, partitionScheme);
     }
 }
