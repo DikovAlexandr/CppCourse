@@ -10,7 +10,7 @@ struct TreeNode {
     TreeNode(int val) : value(val), leftChild(nullptr), rightChild(nullptr) {}
 };
 
-// Insetr new element in tree
+// Insert new element in tree
 TreeNode* insert(TreeNode* root, int val) {
     if (!root) {
         return new TreeNode(val);
@@ -47,7 +47,7 @@ int countNodes(TreeNode* root) {
     return 1 + countNodes(root->leftChild) + countNodes(root->rightChild);
 }
 
-// Print binary tree as a sotred array
+// Print binary tree as a sorted array
 void printAsSorted(TreeNode* root, std::ofstream & output) {
     if (root) {
         printAsSorted(root->leftChild, output);
@@ -78,7 +78,7 @@ int main() {
     int maxVal = findMax(root);
     output << maxVal << std::endl;
 
-    // Pirnt minimum value
+    // Print minimum value
     int minValue = findMin(root);
     output << minValue << std::endl;    
 

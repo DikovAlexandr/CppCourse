@@ -11,7 +11,7 @@ void knapsack(int N, int M, vector<int>& weights, vector<int>& values) {
     for (int i = 1; i <= N; i++) {
         for (int j = 0; j <= M; j++) {
             dp[i][j] = dp[i - 1][j]; // If do not take  
-            keep[i][j] = false;
+            keep[i][j] = false; // Mark the item as not chosen
 
             if (j >= weights[i - 1]) {
                 int value = dp[i - 1][j - weights[i - 1]] + values[i - 1];
